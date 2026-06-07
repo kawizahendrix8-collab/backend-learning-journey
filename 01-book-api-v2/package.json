@@ -1,0 +1,17 @@
+{
+  "name": "01-book-api-v2",
+  "version": "1.0.0",
+  "description": "A simple Node.js + Express backend API for managing books.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
