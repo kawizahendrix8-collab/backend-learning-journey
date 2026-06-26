@@ -1,4 +1,4 @@
-const Note = require("./data/notes");
+const Note = require("./data/Note");
 
 const createNote = async (req, res) => {
   const newNote = new Note({
