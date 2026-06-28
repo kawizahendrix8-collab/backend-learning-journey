@@ -6,4 +6,4 @@ const {createNote,getNotes} = require("./Controller");
 router.post("/",createNote);
 router.get("/",getNotes);
 
-module.exports = Router;
+module.exports = router;

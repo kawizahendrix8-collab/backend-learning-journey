@@ -2,8 +2,9 @@
   "name": "03-notes-system-v1",
   "version": "1.0.0",
   "description": "Notes-system-v1",
-  "main": "Controller.js",
+  "main": "Server.js",
   "scripts": {
+      "start": "node Server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
