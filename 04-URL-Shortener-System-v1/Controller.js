@@ -20,3 +20,14 @@
      
   });
 };
+
+
+   exports.redirectToUrl = (req,res) =>{
+     const shortCode = req.params.shortCode;
+       const found = urls.find(u => u.shortCode === shortCode);
+       
+        if(!found) {
+          return res. status(404).json({message: "Url not found"});
+        }
+        res.redirect(found.originalUrl);
+   };

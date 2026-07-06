@@ -5,7 +5,7 @@
 
  app.use(express.json());
  
- app.use("/url", urlRoutes);
+ app.use("/", urlRoutes);
  
  app.listen(3000, ()=>{
    console.log("We are live on line 3000");

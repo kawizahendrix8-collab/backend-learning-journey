@@ -1,8 +1,9 @@
 const express = require("express");
    const router = express.Router();
    
-   const { shortCode } = require("./Controller");
+   const { shortCode , redirectToUrl } = require("./Controller");
    
    router.post("/", shortCode);
+   router.get("/:shortCode",redirectToUrl);
    
 module.exports = router;
