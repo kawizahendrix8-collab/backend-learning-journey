@@ -1,58 +1,41 @@
-Hendrix Kawiza
+# Hendrix Kawiza
+### Backend Engineer in the Making 🚀
 
-Backend Engineer in the Making 🚀
-
-I am a 16-year-old developer focused on building strong foundations in backend engineering, system design, and scalable software architecture.
+16-year-old developer building strong foundations in backend engineering, API design, and scalable software architecture — one project at a time.
 
 ---
 
-🧠 What I’m Learning
-
+### 🧠 Currently Learning
 - Backend development (Node.js, Express)
 - API design and architecture
-- Authentication systems (JWT, sessions)
+- Authentication (JWT, sessions)
 - Databases and data modeling
 - System design fundamentals
-- Scalable backend infrastructure concepts
 
 ---
 
-🔥 My Approach
+### 🔥 How I Work
+I don't just build projects — I build understanding.
 
-I don’t just build projects — I build understanding.
-
-I focus on:
-
-- Writing clean, structured backend systems
-- Learning how real-world systems are designed
-- Improving step by step through consistent weekly builds
-- Documenting my journey as I grow
+- Clean, structured backend systems over quick hacks
+- Learning how real-world systems are actually designed
+- Consistent weekly builds, each one harder than the last
+- Documenting the journey as I go
 
 ---
 
-🎯 Goal
-
-To become a strong backend and systems engineer capable of building production-grade systems, scalable APIs, and infrastructure-level software used in real-world applications.
-
----
-
-🚀 Vision
-
-From simple APIs to complex distributed systems — this repository represents my journey from beginner to engineer.
-
-I am not rushing results. I am building depth.
+### 🎯 Goal
+To become a backend and systems engineer capable of building production-grade APIs and infrastructure used in real-world applications — going from simple APIs to complex distributed systems, depth over speed.
 
 ---
 
-💡 Philosophy
-
-«“Consistency beats intensity. Every week I build, I improve.”»
+### 💡 Philosophy
+> "Consistency beats intensity. Every week I build, I improve."
 
 ---
 
-📍 Current Focus
-
+### 📍 Current Focus
 - Backend fundamentals
-- Authentication systems
 - REST API design
+- Authentication systems
 - Clean architecture practices
