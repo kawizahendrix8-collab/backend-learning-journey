@@ -39,7 +39,7 @@
     
     exports.updateTask = (req,res) => {
        
-       const taskId = parseInt(rea.params.id);
+       const taskId = parseInt(req.params.id);
        
          const task = tasks.find(t => t.id === taskId);
           
@@ -57,7 +57,17 @@
     };
     
     exports.completeTask = (req,res) =>{
+            const taskId = Number(req.params.id);
       
+     const task = tasks.find(t => t.id === taskId);
+      
+        if(!task) {
+          return res.status(404).json({message:"task not found"});
+        }
+        task.completed = true;
+
+  res.json(task);
+  
     };
     
     exports.deleteTask = (req, res) =>{
@@ -65,7 +75,7 @@
       
       const task = tasks.findIndex(t => t.id === taskId);
          
-         if(!task){
+         if (task === -1) {
            return res.status(404).json({message:" task not found"});
          }
          
