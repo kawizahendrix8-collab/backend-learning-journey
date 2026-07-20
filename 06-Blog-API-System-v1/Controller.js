@@ -17,10 +17,10 @@ exports.createPost = (req,res) => {
 };
 
 exports.getAllPosts = (req,res) =>{
-  req.json(Posts);
+  res.json(Posts);
 };
 
-exports.getTaskById = (req,res) =>{
+exports.getPostById = (req,res) =>{
    const postId = parseInt(req.params.id);
     const post = Posts.find(p => p.id === postId );
     
@@ -29,11 +29,11 @@ exports.getTaskById = (req,res) =>{
         message: "Post Not Found"
       });
     }
-    res.json(Post);
+    res.json(post);
 };
 
 exports.updatePost = (req,res) =>{
-  const postId = parseInt(teq.params.id);
+  const postId = parseInt(req.params.id);
   
   const post = Posts.find(p => p.id === postId);
   
@@ -42,4 +42,29 @@ exports.updatePost = (req,res) =>{
       message:"post Not Found"
     });
   }
+    const updatePost = req.body;
+    
+    post.title = updatePost.title
+    post.body = updatePost.body
+    post.author = updatePost.author
+    res.json({
+      message:"updated"
+    });
+};
+
+exports.deletePost = (req,res) =>{
+  const postId = parseInt(req.params.id);
+   
+     const post = Posts.findIndex(p => p.id === postId);
+     
+     if(post === -1){
+       return res.status(404).json({
+         message:"Post Not Found"
+       });
+     }
+     
+     Posts.splice(post,1)
+     res.json({
+       message:"Post Deleted"
+     });
 };
